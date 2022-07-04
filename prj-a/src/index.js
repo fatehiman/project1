@@ -10,11 +10,11 @@ class MyClass extends Component {
     console.log("constructor");
   }
 
-  handleClick = () => {
-    this.setState({ myCounter: this.state.myCounter + 1 }, () => console.log("callBack" + this.state.myCounter));
+  handleClick() {
+    this.setState({ myCounter: this.state.myCounter + 1 }, () => console.log("callBack " + this.state.myCounter));
     console.log("after" + this.state.myCounter);
     return;
-  };
+  }
 
   componentDidMount() {
     console.log("componentDidMount" + this.state.myCounter);
